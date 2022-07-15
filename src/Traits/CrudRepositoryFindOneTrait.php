@@ -7,7 +7,7 @@ use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
 use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Entity\Exceptions\AlreadyExistsException;
-use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Entity\Interfaces\UniqueInterface;
 use ZnDomain\Query\Entities\Query;

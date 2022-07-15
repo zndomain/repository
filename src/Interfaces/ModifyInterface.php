@@ -2,7 +2,7 @@
 
 namespace ZnDomain\Repository\Interfaces;
 
-use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnCore\Contract\Common\Exceptions\NotFoundException;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 
