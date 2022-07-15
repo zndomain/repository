@@ -2,7 +2,7 @@
 
 namespace ZnDomain\Repository\Mappers;
 
-use ZnCore\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnDomain\Repository\Interfaces\MapperInterface;
 
 class EntityMapper implements MapperInterface

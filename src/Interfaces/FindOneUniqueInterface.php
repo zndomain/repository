@@ -3,9 +3,9 @@
 namespace ZnDomain\Repository\Interfaces;
 
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
-use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Entity\Interfaces\UniqueInterface;
+use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Interfaces\UniqueInterface;
 
 interface FindOneUniqueInterface
 {

@@ -4,12 +4,12 @@ namespace ZnDomain\Repository\Traits;
 
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
 use ZnDomain\Domain\Enums\EventEnum;
-use ZnCore\Entity\Exceptions\AlreadyExistsException;
-use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\Entity\Helpers\EntityHelper;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Entity\Interfaces\UniqueInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Entity\Exceptions\AlreadyExistsException;
+use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Entity\Interfaces\UniqueInterface;
+use ZnDomain\Query\Entities\Query;
 use ZnCore\Text\Helpers\Inflector;
 use ZnLib\I18Next\Facades\I18Next;
 

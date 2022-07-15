@@ -2,9 +2,9 @@
 
 namespace ZnDomain\Repository\Interfaces;
 
-use ZnCore\Entity\Exceptions\NotFoundException;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Validation\Exceptions\UnprocessibleEntityException;
+use ZnDomain\Entity\Exceptions\NotFoundException;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Validator\Exceptions\UnprocessibleEntityException;
 
 interface ModifyInterface
 {

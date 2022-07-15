@@ -3,8 +3,8 @@
 namespace ZnDomain\Repository\Traits;
 
 use ZnDomain\Domain\Enums\EventEnum;
-use ZnCore\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Validation\Helpers\ValidationHelper;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
+use ZnDomain\Validator\Helpers\ValidationHelper;
 
 trait CrudRepositoryUpdateTrait
 {
