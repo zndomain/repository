@@ -3,12 +3,13 @@
 namespace ZnDomain\Repository\Traits;
 
 use ZnCore\Arr\Helpers\ArrayHelper;
+use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\Collection\Interfaces\Enumerable;
 use ZnCore\Collection\Libs\Collection;
-use ZnDomain\Entity\Helpers\EntityHelper;
-use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Instance\Helpers\ClassHelper;
 use ZnCore\Text\Helpers\Inflector;
+use ZnDomain\Entity\Helpers\EntityHelper;
+use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnLib\Components\Format\Encoders\ChainEncoder;
 
 trait RepositoryMapperTrait
@@ -57,7 +58,7 @@ trait RepositoryMapperTrait
             $array = $encoders->decode($array);
         }
         $entity = ClassHelper::createInstance($this->getEntityClass());
-        EntityHelper::setAttributes($entity, $array);
+        PropertyHelper::setAttributes($entity, $array);
         return $entity;
     }
 

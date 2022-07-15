@@ -2,10 +2,10 @@
 
 namespace ZnDomain\Repository\Helpers;
 
-use ZnDomain\Entity\Helpers\EntityHelper;
+use ZnCore\Code\Helpers\PropertyHelper;
+use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Entity\Interfaces\UniqueInterface;
 use ZnDomain\Query\Entities\Query;
-use ZnCore\Text\Helpers\Inflector;
 
 class RepositoryUniqueHelper
 {
@@ -14,7 +14,7 @@ class RepositoryUniqueHelper
     {
         $query = new Query();
         foreach ($uniqueConfig as $uniqueName) {
-            $value = EntityHelper::getValue($entity, $uniqueName);
+            $value = PropertyHelper::getValue($entity, $uniqueName);
             if ($value === null) {
                 return null;
             }

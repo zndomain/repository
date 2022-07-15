@@ -2,15 +2,15 @@
 
 namespace ZnDomain\Repository\Traits;
 
+use ZnCore\Code\Helpers\PropertyHelper;
 use ZnCore\Contract\Common\Exceptions\InvalidMethodParameterException;
+use ZnCore\Text\Helpers\Inflector;
 use ZnDomain\Domain\Enums\EventEnum;
 use ZnDomain\Entity\Exceptions\AlreadyExistsException;
 use ZnDomain\Entity\Exceptions\NotFoundException;
-use ZnDomain\Entity\Helpers\EntityHelper;
 use ZnDomain\Entity\Interfaces\EntityIdInterface;
 use ZnDomain\Entity\Interfaces\UniqueInterface;
 use ZnDomain\Query\Entities\Query;
-use ZnCore\Text\Helpers\Inflector;
 use ZnLib\I18Next\Facades\I18Next;
 
 trait CrudRepositoryFindOneTrait
@@ -74,7 +74,7 @@ trait CrudRepositoryFindOneTrait
     {
         $query = new Query();
         foreach ($uniqueConfig as $uniqueName) {
-            $value = EntityHelper::getValue($entity, $uniqueName);
+            $value = PropertyHelper::getValue($entity, $uniqueName);
             if ($value === null) {
                 return null;
             }
